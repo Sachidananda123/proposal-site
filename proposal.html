@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffefba, #ffffff);
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Special Message for You</h1>
+        <p id="paragraph1">Dekha mu tamaku ei katha kebetahru kahibi boli bhabuthili but kemiti kahibi janiparunathili because mate ebe bi dara achhi je tame ei katha janila pare mo saha katha haba ki
+            nahi.
+        </p>
+        <button id="button1">Open the Chocolate</button>
+
+        <p id="paragraph2" class="hidden">Life has been so beautiful ever since you came into my life.Tame molife asiba pare mo life re sabu kichhi change heichi.
+            Like Mu mo goal upare focus karuchi,Time waste karuni,health ra proper care nauchi.Au jadi kouthi tike bhul hauchi sethi mo cute panda pura fire panda heijauchnati.
+        </p>
+        <button id="button2" class="hidden">Open the Gift</button>
+
+        <p id="paragraph3" class="hidden">Dekha gote pua pain ta mummy jaga re au kahaku bi rakhiba ete easy heinathae ki ta mummy pari love au care jhia miliba ba easy haueni.
+            Mu ei katha kahauku bi ajji jain kaheni but tamaku kahuchi After My Mom You can take care of me and love like her.#My Second Mom
+            Sata katha hauchi je mu jetebele tama saha first time pain katha heli bass khali time pass pain katha hauthili but mu janinathili ki tama saha time spend tame ete jaldi mo life ra most important person heijiba boli.
+            Jahaku ki mu mo tharu duraku jibaru ete daruchi.
+        </p>
+        <button id="button3" class="hidden">Again Open The Chocolate</button>
+        <p>Mate ete bulei bulei kahibaku bahala lageni so mu jaha kahuchi direct kahuchi hela.
+            Dekha Mu semitka pila nuha je janaka saha kahibi lifetime rahiba pain au gote di masa pare breakup karidebi ki tama bhai bhauja nka bhali behave karibi.Mate jia truely heart ru bhala lage mu ta sahita life time 
+            rahiba pain chahne.So My Cutu Lovely Gelhu if you my partner forever in my life?
+        </p>
+
+        <button id="button3" class="hidden">click On It</button>
+
+        <p>Dekha mu tamaku yes kahiba pain force karuni.Because mu mo feelings ku kahatharu bi hide kariki rakhipareni au jahaku mu ei katha kahichi tapare sei au kebe bi 
+            mo saha katha heini. So Mu janichi je tamaku ei sabu re interest nahi au ei sabu pare tamaku bi laguthiba je kale mu tamara au tama goal and family  bhithare interfare karuchi boli.
+            So tame bi chahenile mo saha katha haba band karipariba au tamaku bi ebe tharu mo upare raga bi laguthiba,mu janichi. Jadi tame mo saha katha habani tahale bhabi nebi je eita gote mora dream thila boli. But mu promise karuchi je kebe bi emiti kichhi karini ki karibini 
+            jouthire tame hurt haba. Gote katha kintu sata je tama saha mu jetiki happiest moment spend karichi seita na au kaha sahita haba even mo family sahita bi nuhe,tame gote shy au weak paerson ku
+            strong au samastanku answer daba person karithibaru thanks. Au tamaku deithiba promise mu kebi bhulibini and mo goal ku acheive kariki rahibi.
+        </p>
+
+        <button id="button3" class="hidden">Open Your Heart</button>
+        <div id="proposal" class="hidden">
+            <p>Tama answer kan asiba mu janini ki tame mo saha au katha haba ki nahi seita bi mu janini but gote mane rakhiba je Your Pikachu is always with you in any situation,any time,anywhere.
+                You are my only Motu Panda Gelhu and Cutu. I am waiting for answer?
+            </p>
+            <img src="couple.jpeg" alt="Proposal">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the interaction
+        document.getElementById("button1").addEventListener("click", function() {
+            document.getElementById("paragraph2").classList.remove("hidden");
+            document.getElementById("button2").classList.remove("hidden");
+            this.classList.add("hidden");
+        });
+
+        document.getElementById("button2").addEventListener("click", function() {
+            document.getElementById("paragraph3").classList.remove("hidden");
+            document.getElementById("button3").classList.remove("hidden");
+            this.classList.add("hidden");
+        });
+
+        document.getElementById("button3").addEventListener("click", function() {
+            document.getElementById("proposal").classList.remove("hidden");
+            this.classList.add("hidden");
+        });
+    </script>
+</body>
+</html>
